@@ -1,0 +1,100 @@
+\documentclass[12pt]{article} % Document class and font size
+
+% --------------------- PACKAGES ---------------------
+\usepackage[utf8]{inputenc}      % Input encoding
+\usepackage[T1]{fontenc}         % Font encoding
+\usepackage{lmodern}             % Latin Modern font
+\usepackage{graphicx}            % Image handling
+\usepackage{caption}             % Better captions
+\usepackage{subcaption}          % Subfigures
+\usepackage{amsmath, amssymb}    % Math support
+\usepackage{geometry}            % Page layout
+\usepackage{hyperref}            % Hyperlinks
+\usepackage{ragged2e}            % For justify environment
+\usepackage{xcolor}              % Colors
+\usepackage{fancyhdr}            % Headers and footers
+
+% --------------------- PAGE SETTINGS ---------------------
+\geometry{a4paper, margin=1in}   % A4 paper with 1 inch margin
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{My Report}
+\lhead{LaTeX Example}
+\cfoot{\thepage}
+
+% --------------------- DOCUMENT START ---------------------
+\begin{document}
+
+% --------------------- TITLE ---------------------
+\title{\textbf{A Sample LaTeX Report with Core Features}}
+\author{Your Name}
+\date{\today}
+\maketitle
+
+% --------------------- SECTION: INTRODUCTION ---------------------
+\section{Introduction}
+\justifying
+This document demonstrates a basic LaTeX structure with essential elements including font styling, image insertion, labels, and more.
+
+% --------------------- SECTION: FONT STYLES ---------------------
+\section{Font Styling and Sizes}
+\textbf{Bold Text} \\
+\textit{Italic Text} \\
+\underline{Underlined Text} \\
+
+\vspace{0.3cm}
+Different font sizes:
+{\tiny tiny} \\
+{\scriptsize scriptsize} \\
+{\footnotesize footnotesize} \\
+{\small small} \\
+{\normalsize normalsize} \\
+{\large large} \\
+{\Large Large} \\
+{\LARGE LARGE} \\
+{\huge huge} \\
+{\Huge Huge}
+
+% --------------------- SECTION: IMAGE IMPORT ---------------------
+\section{Image Import with Label}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{example-image} % Replace with your image file
+    \caption{Sample Image}
+    \label{fig:sample_image}
+\end{figure}
+
+As shown in Figure~\ref{fig:sample_image}, this is how you insert and reference an image.
+
+% --------------------- SECTION: ALIGNMENT ---------------------
+\section{Text Alignment}
+\begin{flushleft}
+Left-aligned text.
+\end{flushleft}
+
+\begin{flushright}
+Right-aligned text.
+\end{flushright}
+
+\begin{justify}
+This is justified text using the \texttt{justify} environment from the \texttt{ragged2e} package.
+\end{justify}
+
+% --------------------- SECTION: EQUATIONS ---------------------
+\section{Equations}
+An inline equation: $E = mc^2$ \\
+A displayed equation:
+\begin{equation}
+    a^2 + b^2 = c^2
+    \label{eq:pythagoras}
+\end{equation}
+
+Equation~\ref{eq:pythagoras} represents the Pythagorean theorem.
+
+% --------------------- SECTION: CONCLUSION ---------------------
+\section{Conclusion}
+\justifying
+This template can serve as a starting point for academic or technical documents in LaTeX. Customize as needed!
+
+% --------------------- END DOCUMENT ---------------------
+\end{document}
