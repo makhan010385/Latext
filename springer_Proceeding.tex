@@ -1,0 +1,86 @@
+\documentclass[runningheads]{llncs}
+
+% --------------------- PACKAGES ---------------------
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{color}
+\usepackage{multirow}
+
+% --------------------- BEGIN DOCUMENT ---------------------
+\begin{document}
+
+% --------------------- TITLE ---------------------
+\title{Your Paper Title Goes Here}
+
+% If the title is too long for the running head
+\titlerunning{Short Title for Running Head}
+
+% --------------------- AUTHORS ---------------------
+\author{First Author\inst{1} \and
+Second Author\inst{2} \and
+Third Author\inst{3}}
+
+\authorrunning{F. Author et al.}
+
+\institute{
+Department of Computer Science, University Name, City, Country \\
+\email{first.author@example.com} \and
+Organization Name, City, Country \\
+\email{second.author@example.com} \and
+Another Institution, City, Country \\
+\email{third.author@example.com}
+}
+
+\maketitle
+
+% --------------------- ABSTRACT ---------------------
+\begin{abstract}
+This is a sample abstract for a Springer conference paper. It provides a concise summary of the paper, including key results and contributions.
+\keywords{Springer \and LNCS \and Template \and Conference \and LaTeX}
+\end{abstract}
+
+% --------------------- INTRODUCTION ---------------------
+\section{Introduction}
+Write your introduction here. Discuss the problem statement, prior work, and your paper’s contributions.
+
+% --------------------- RELATED WORK ---------------------
+\section{Related Work}
+Discuss previous research and how your work differs or improves upon it.
+
+% --------------------- METHODOLOGY ---------------------
+\section{Methodology}
+Explain the methods used in your research. Include any relevant equations and algorithms.
+
+\subsection{Sample Equation}
+Here is a sample equation:
+\begin{equation}
+    y = mx + c
+    \label{eq:line}
+\end{equation}
+Equation~\ref{eq:line} shows a basic linear equation.
+
+% --------------------- RESULTS ---------------------
+\section{Results and Discussion}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{example-image} % Replace with your image file
+    \caption{Sample figure caption}
+    \label{fig:sample}
+\end{figure}
+
+Discuss your findings here. Refer to Figure~\ref{fig:sample} for a visual representation.
+
+% --------------------- CONCLUSION ---------------------
+\section{Conclusion}
+Summarize the work and potential future directions.
+
+% --------------------- REFERENCES ---------------------
+\bibliographystyle{splncs04}
+\bibliography{references} % Assumes you have a references.bib file
+
+\end{document}
